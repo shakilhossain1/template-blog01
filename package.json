@@ -1,0 +1,19 @@
+{
+  "name": "blog01",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-image": "^2.0.6",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.14",
+    "tailwindcss": "^2.1.2",
+    "vite": "^2.2.3"
+  },
+  "dependencies": {
+    "alpinejs": "^2.8.2"
+  }
+}
