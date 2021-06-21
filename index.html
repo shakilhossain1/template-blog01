@@ -8,7 +8,6 @@
   </head>
   <body
     x-data="{navOpen: false, searchOpen: false}"
-    class="py-4"
     :class="{'overflow-hidden': navOpen || searchOpen}"
   >
     <!-- Mobile Nav Overlay -->
@@ -91,14 +90,20 @@
         <div id="searchContent"></div>
       </div>
     </div>
-    <header id="header" class="text-skin-light">
+    <header id="header" class=" border-b border-skin-muted">
       <nav
-        class="px-3 py-6 flex justify-between items-center lg:max-w-7xl mx-auto"
+        class="px-3 py-6 flex justify-start items-center lg:max-w-7xl mx-auto"
       >
         <div>
           <img src="/imgs/logo.svg" alt="Logo" />
         </div>
-        <div class="flex space-x-3">
+        <ul class="items-center ml-6 text-skin-muted  space-x-4 hidden lg:flex">
+          <li><a href="#" class="py-1 px-4 inline-block bg-skin-primary text-skin-light rounded-full">Home</a></li>
+          <li><a href="#" class="py-1 px-2 inline-block transition-all duration-150 hover:text-skin-dark">About</a></li>
+          <li><a href="#" class="py-1 px-2 inline-block transition-all duration-150 hover:text-skin-dark">contact</a></li>
+          <li><a href="#" class="py-1 px-2 inline-block transition-all duration-150 hover:text-skin-dark">blog</a></li>
+        </ul>
+        <div class="flex space-x-3 ml-auto">
           <button
             @click="searchOpen = true"
             id="searchButton"
@@ -147,7 +152,7 @@
     <!-- Showcase section -->
     <section
       id="showcase"
-      class="md:grid md:grid-cols-6 lg:max-w-7xl lg:mx-auto"
+      class="md:grid md:grid-cols-6 lg:max-w-7xl lg:mx-auto mt-4"
     >
       <!-- Shocase Left Area -->
       <div class="px-2 md:col-span-4">
