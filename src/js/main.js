@@ -1,4 +1,4 @@
-import './tailwind.css'
+import '../tailwind.css'
 import Alpine from "alpinejs";
 
 window.Alpine = Alpine;

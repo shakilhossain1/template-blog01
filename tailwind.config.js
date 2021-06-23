@@ -6,7 +6,8 @@ module.exports = {
      extend: {
        backgroundColor: {
          skin: {
-           primary: '#fe4f70'
+           primary: '#fe4f70',
+           lightblue: '#F1F8FF'
          }
        },
        textColor: {
